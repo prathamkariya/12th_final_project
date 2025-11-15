@@ -1,0 +1,33 @@
+CREATE DATABASE bank_management;
+
+USE bank_management;
+
+CREATE TABLE customers (
+    account_number BIGINT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    aadhar_number VARCHAR(12) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    account_type VARCHAR(50) NOT NULL,
+    balance DECIMAL(15, 2) NOT NULL
+);
+
+
+INSERT INTO customers (account_number, name, date_of_birth, phone_number, email, aadhar_number, address, account_type, balance) VALUES
+(102345678, 'Riya Malhotra', '1989-06-27', '6543210987', 'riya.malhotra@gmail.com', '678901234567', '89 Nehru Place, Kolkata, West Bengal', 'Salary Account', 5000000.00),
+(123216589, 'Prakhar Tiwari', '1989-07-18', '9843667489', 'prakhar.tiwari@gmail.com', '983465728532', '44 Ring Road, Kolkata, West Bengal', 'Saving', 98000.00),
+(135790864, 'Pratham Oberoi', '1995-02-05', '9988776655', 'pratham.oberoi@gmail.com', '890123456789', '22 Green Park, Delhi, Delhi', 'Saving Account', 2000000.00),
+(142733221, 'Krupa Patel', '1990-02-12', '9944367553', 'krupa.patel@gmail.com', '225436785456', '44B, Ring Road, Navi Mumbai, Maharashtra', 'Salary', 992000.00),
+(213456789, 'Aadarsh Chawda', '1994-11-15', '7654321098', 'kabir.khanna@yahoo.com', '789012345678', '15 Jayanagar, Bengaluru, Karnataka', 'Saving Account', 10000000.00),
+(324567890, 'Aditi Mehta', '1988-06-22', '3210987654', 'aditi.mehta@gmail.com', '890123456789', '54 Rajouri Garden, New Delhi, Delhi', 'Saving Account', 150000000.00),
+(325647890, 'Aarushi Sharma', '1999-02-19', '9955342210', 'aarushi.sharma@gmail.com', '765543445670', '85 Marine Drive, Mumbai, Maharashtra', 'Savings', 2300000.00),
+(346969001, 'Aanya Rawat', '2001-08-15', '9456675400', 'aanya.rawat@gmail.com', '998650993455', '87D-Mahatma Palace, Navi Mumbai, Maharashtra', 'Savingd', 1500000.00),
+(459876321, 'Ajay Bansal', '1990-01-20', '9812345678', 'ajay.bansal@gmail.com', '123456789012', '789 Sector 15, Faridabad, Haryana', 'Saving Account', 25000.00),
+(612345678, 'Neha Sethi', '1987-05-15', '9876123450', 'neha.sethi@yahoo.com', '234567890123', '5 Palm Street, Bengaluru, Karnataka', 'Current Account', 450000.00),
+(664859349, 'Dhwanit Kumar', '1998-12-03', '9945367549', 'dhwanit.kumar@gmail.com', '223547685493', '88, SP Road, Kolkata, West Bengal', 'Current', 3346789.00),
+(734567890, 'Vikrant Joshi', '1993-08-10', '9109876543', 'vikrant.joshi@gmail.com', '345678901234', '20 MG Road, Mumbai, Maharashtra', 'Salary Account', 1200000.00),
+(845678901, 'Pooja Agarwal', '1985-12-30', '8654321098', 'pooja.agarwal@gmail.com', '456789012345', '40 Connaught Place, New Delhi, Delhi', 'Saving Account', 320000.00),
+(945732489, 'Manpreet Kaur', '1999-03-11', '8549000543', 'manpreet.kaur@yahoo.com', '224573880912', '11, Chandni Chowk, New Delhi', 'Salary', 2300.00),
+(956789012, 'Sahil Kapoor', '1992-03-18', '7865432109', 'sahil.kapoor@yahoo.com', '567890123456', '100 Rajouri Garden, Delhi, Delhi', 'Current Account', 353000.00);
